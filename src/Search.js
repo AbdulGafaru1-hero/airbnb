@@ -1,3 +1,5 @@
+import PeopleIcon from '@mui/icons-material/People';
+import { Button } from '@mui/material';
 import React, { useState } from 'react'
 import { DateRangePicker } from 'react-date-range'
 import "react-date-range/dist/styles.css";
@@ -26,9 +28,14 @@ function handleSelect(ranges) {
     <div className='search'>
         
  <DateRangePicker
-               ranges = {[selectionRange]}
-               onChange = {handleSelect}
-              />
+  ranges = {[selectionRange]}
+ onChange = {handleSelect} />
+<h2>
+    Number of Guests
+    <PeopleIcon />
+</h2>
+<input min ={0} defaultValue={2} type="number" />
+<Button> Search Airbnb</Button>
 
         </div>
   )
