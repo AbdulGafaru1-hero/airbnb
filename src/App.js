@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './Footer';
 import Header from './Header';
 import Home from './Home';
 
@@ -11,6 +12,7 @@ function App() {
 
  <Home />
 
+<Footer />
 {/* Header */}
 
 {/* Banner */}

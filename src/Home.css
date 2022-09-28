@@ -1,0 +1,33 @@
+.home__section {
+display: flex;
+padding: 30px;
+}
+
+.home__banner {
+    background: linear-gradient(0deg, rgba(255 255 255 / 54%), rgba(255 0 150 / 69%)), url('https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=600') center center;
+    background-size: cover;
+    mix-blend-mode: color;
+    height:  50vh;
+    position: relative;
+    width: 100%;
+    background-color:#ff7779  ;
+
+}
+
+.home__banner > h1 {
+    color: white;
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.home__feature > h2 {
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: -20px;
+    text-transform: inherit;
+    display: flex;
+    margin-left: 45%;
+}

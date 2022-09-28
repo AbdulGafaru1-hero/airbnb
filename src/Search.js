@@ -34,7 +34,8 @@ function handleSelect(ranges) {
     Number of Guests
     <PeopleIcon />
 </h2>
-<input min ={0} defaultValue={2} type="number" />
+<input min = {0} defaultValue = {2}
+ type="number" />
 <Button> Search Airbnb</Button>
 
         </div>
