@@ -4,11 +4,12 @@ import React, { useState } from 'react'
 import { DateRangePicker } from 'react-date-range'
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
+import { useNavigate } from 'react-router-dom';
 import './Search.css'
 
 //DATE PICKER COMPONENT
 function Search() {
-
+  const navigate =  useNavigate();
 const [startDate, setStartDate] = useState(new Date());
 const [endDate, setEndDate] = useState(new Date());
 
@@ -36,7 +37,7 @@ function handleSelect(ranges) {
 </h2>
 <input min = {0} defaultValue = {2}
  type="number" />
-<Button> Search Airbnb</Button>
+<Button onClick={() => navigate('/search')}> Search Airbnb</Button>
 
         </div>
   )
